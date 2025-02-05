@@ -313,65 +313,131 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-@media (max-width: 568px) {
-            .header h1 {
-                font-size: 24px;
-            }
+@media (max-width: 375px) {
+    body {
+        padding: 10px;
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+    }
 
-            .header h2 {
-                font-size: 6px;
-            }
+    /* Assurez-vous que le header et la nav sont visibles */
+    .header, .nav {
+        display: block; /* S'assure qu'ils sont bien visibles */
+        width: 100%;
+        padding: 10px; /* Ajuste l'espacement si nécessaire */
+    }
 
-            .nav {
-                flex-direction: column;
-                width: 100%;
-            }
+    h1, h2 {
+        font-size: 1.5rem;  /* Taille réduite des titres */
+    }
 
-            .content {
-                flex-direction: column;
-                margin-top: 15px;
-            }
+    /* Modifie la disposition de la barre de navigation */
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+    }
 
-            .tabs {
-                width: 100%;
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
+    .nav-bar {
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
 
-            .tab {
-                width: 100%;
-                margin-bottom: 10px;
-            }
+    /* Ajuste la présentation des contenus */
+    .content {
+        flex-direction: column;
+        margin-top: 15px;
+    }
 
-            .product-wrapper {
-                flex-direction: column;
-                align-items: center;
-            }
+    /* Réduit la taille des tabs et les empile */
+    .tabs {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px; /* Ajout d'un peu de padding pour les tabs */
+        box-sizing: border-box;
+    }
 
-            .product-details {
-                width: 90%;
-                margin: 15px 0;
-                flex-direction: column;
-            }
+    .tab {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px; /* Padding ajouté pour que le texte soit visible */
+        text-align: left; /* Alignement à gauche du texte dans les tabs */
+        font-size: 14px; /* Taille de police ajustée pour mobile */
+        background-color: #f0f0f0; /* Fond gris clair pour mieux voir le texte */
+        border-radius: 5px; /* Bords arrondis pour un meilleur design */
+    }
 
-            .product-image {
-                width: 80%;
-                height: auto;
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
+    /* Ajuste la disposition des produits */
+    .product-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px; /* Ajoute de l'espace entre les produits */
+    }
 
-            .add-to-cart {
-                width: 100%;
-                margin-top: 15px;
-            }
+    .product-details {
+        width: 100%;
+        margin: 15px 0;
+        flex-direction: column;
+    }
 
-            .box {
-                width: 100%;
-                height: auto;
-                margin-top: 15px;
-            }
-        }
+    .product-image {
+        width: 100%; /* Adapte la largeur de l'image */
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .add-to-cart {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Box et autres éléments */
+    .box {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        display: block;
+    }
+
+    /* Ajuste les boutons - */
+    #minus, #plus {
+        font-size: 12px;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Ajuste l'input quantity */
+    input[type="number"] {
+        width: 50px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    /* Gère l'espacement général pour une lecture fluide */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Réduction de la taille des textes pour plus de lisibilité */
+    p, span {
+        font-size: 14px;  /* Texte plus petit pour le mobile */
+    }
+
+    /* Footer si nécessaire */
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Optimisation pour éviter les débordements */
+    .scrollable-content {
+        max-width: 100%;
+        overflow-y: auto; /* Permet de défiler verticalement */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -454,7 +520,7 @@ input[type="number"] {
                         <div class="product-image" style="background-image: url('path-to-your-image3.jpg');"></div>
                         <div>
                             <div class="product-name">Top Casual</div>
-                            <div class="product-description">Top confortable pour le quotidien avec une coupe moderne.</div>
+                            <div class="product-description">Robe de soirée en édition limitée, parfaite pour les grandes occasions.</div>
                             <div class="product-price"><span class="price">$45.00</span></div>
                             <div class="product-reference">Réf: 11223</div>
                             <div class="offer-details">
