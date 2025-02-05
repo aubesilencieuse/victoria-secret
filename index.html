@@ -21,7 +21,7 @@
         .top-bar {
             width: 200px;
             height: 5px;
-            background-color: #cdb3e2;
+            background-color: #c1afd0;
             border-radius: 0 0 5px 5px;
             position: absolute;
             left: 50%;
@@ -32,7 +32,7 @@
         .bottom-bar {
             width: 200px;
             height: 5px;
-            background-color: #cdb3e2;
+            background-color: #c1afd0;
             border-radius: 5px 5px 0 0;
             position: absolute;
             left: 50%;
@@ -54,6 +54,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 0;
+            color:#c1afd0;
         }
 
         .nav {
@@ -62,18 +63,19 @@
             gap: 5px;
             margin-bottom: 15px;
             align-items: center; /* Centrage vertical */
-            height: 3px;
+            height: 15px;
             width: 600px;
-            background-color: #e5d7f1;
+            background-color: #f8f8f8;
             padding: 5px;
             border-radius: 50px;
-            margin-top: 15px;
+            margin-top: 65px;
         }
 
         .nav a {
             text-decoration: none;
-            color: rgb(245, 245, 245);
+            color: rgb(55, 55, 55);
             padding: 0 15px;
+            font-size: 10px;
             text-transform: lowercase;
         }
 
@@ -96,19 +98,19 @@
         .tab {
             width: 250px;
             height: 100%;
-            background-color: #e5d7f1;
+            background-color: #c1afd0;
             margin-bottom: 5px;
             display: flex;
             align-items: center;
             padding-left: 10px;
             cursor: default; /* Désactive le clic */
-            border-radius: 5px;
+            border-radius: 25px 0 0 25px;
             flex-direction: row;
             justify-content: flex-start;
         }
 
         .tab i {
-            color: #b96272;
+            color: #ffffff;
             font-size: 15px;
             margin-right: 20px;
         }
@@ -145,7 +147,7 @@
             width: 100%;
             height: 100%;
             background-color: #f8f8f8;
-            border-radius: 10px;
+            border-radius: 0 25px 25px 0;
             position: relative;
             overflow: hidden;
             background-image: url('path-to-your-background-image.jpg');
@@ -167,12 +169,12 @@
 
         .product-details {
             width: 500px;
-            height: 300px;
+            height: 325px;
             background-color: rgba(255, 255, 255, 0.7);
             padding: 15px;
             margin: 25px;
             box-sizing: border-box;
-            border-radius: 10px;
+            border-radius: 0 25px 25px 0;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -193,6 +195,8 @@
             font-size: 15px;
             margin-top: 5px;
             margin-bottom: 15px;
+            letter-spacing: 1px;
+            font-family: sans-serif;
         }
 
         .product-description {
@@ -228,7 +232,7 @@
         .add-to-cart {
             width: 150px;
             padding: 10px;
-            background-color: #cdb3e2;
+            background-color: #c1afd0;
             color: white;
             border: none;
             border-radius: 5px;
@@ -252,12 +256,12 @@
         }
 
         .box::-webkit-scrollbar-thumb {
-            background-color: #a78f93;
+            background-color: #c1afd0;
             border-radius: 10px;
         }
 
         .box::-webkit-scrollbar-thumb:hover {
-            background-color: #815f60;
+            background-color: #a48fb5;
         }
 
         /* Style pour le bouton - */
@@ -450,8 +454,10 @@ input[type="number"] {
 
     <div class="nav">
         <a href="#">Home</a>
-        <a href="#">Contact</a>
         <a href="#">Raiko House</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        
     </div>
 
     <div class="content">
@@ -460,8 +466,8 @@ input[type="number"] {
                 <div class="tab-content">
                     <i class="uil uil-envelope-heart" style="margin-left: 10px;"></i>
                     <div>
-                        <h3 style="color: #b96272;">Love Spell</h3>
-                        <p style="margin-top: -20px">Collection principale exclusive</p>
+                        <h3 style="color: #ffffff;">Love Spell</h3>
+                        <p style="color: #ffffff; margin-top: -20px">A light mist that leaves a soft and irresistible trail on the skin.</p>
                     </div>
                 </div>
             </div>
@@ -478,12 +484,12 @@ input[type="number"] {
                             <div class="product-name">Love Spell Brume Parfumée Corps</div>
                             <div class="product-price-reference">
                                 <div class="product-price"><span class="price">$75.00</span></div>
-                                <div class="product-reference">Réf: 12345</div>
+                                <div class="product-reference">V112047172017</div>
                             </div>
                             <div class="offer-details">
-                                <p style="font-size: 12px; color: #555;">3ème offert - Détails</p>
+                                <p style="font-size: 12px; color: #c96795;">le 3ème offert ! - <a href="#" style="color: #c96795;">Des détails</a></p>
                             </div>
-                            <div class="product-description2">Robe de soirée en édition limitée, parfaite pour les grandes occasions.</div>
+                            <div class="product-description2">Cherry blossom, fresh peach. Impossible to resist.</div>
                             <br/>
                             <br/>
                             
@@ -577,3 +583,4 @@ document.getElementById('plus').addEventListener('click', function() {
     </script>
 </body>
 </html>
+
